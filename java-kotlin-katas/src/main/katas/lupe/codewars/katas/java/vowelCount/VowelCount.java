@@ -9,3 +9,18 @@ public class VowelCount {
                 .toList().size();
     }
 }
+
+
+// BEST PRACTICES on codewars //
+
+/*
+
+public static int getCount(String str) {
+    return str.replaceAll("(?i)[^aeiou]", "").length();
+}
+
+public static int getCount(String str) {
+    return (int) str.chars().filter(c -> "aeiou".indexOf(c) >= 0).count();
+}
+
+*/

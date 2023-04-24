@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.MethodSource
 import java.util.stream.Stream
 
 class VowelCountTest {
-    val vowelCount = VowelCount()
+    private val vowelCount = VowelCount()
 
     @ParameterizedTest
     @MethodSource("parameters")
