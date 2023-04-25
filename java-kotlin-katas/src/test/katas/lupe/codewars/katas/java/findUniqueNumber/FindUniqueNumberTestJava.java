@@ -16,9 +16,10 @@ class FindUniqueNumberTestJava {
                 Arguments.of(new double[]{}, 0),
                 Arguments.of(new double[]{1,1,1,1,1,2}, 2),
                 Arguments.of(new double[]{1,1,1,1,1,2,2,2,2,4}, 4),
-                Arguments.of(new double[]{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,2,1,1,1,1,1,1}, 2),
+                Arguments.of(new double[]{1,1,1,2,2,2,3,3,3,4,4,4,5,5,5}, 0),
                 Arguments.of(new double[]{2.200000, 1.31313131313131313131313}, 2.200000),
-                Arguments.of(new double[]{1.099511627776E12, 1.125899906842624E15}, 1.125899906842624E15)
+                Arguments.of(new double[]{1.099511627776E12, 1.125899906842624E15}, 1.125899906842624E15),
+                Arguments.of(new double[]{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,2,1,1,1,1,1,1}, 2)
         );
     }
 
