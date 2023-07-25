@@ -7,7 +7,6 @@ public class RomanNumeralDecoder {
         if (roman.isEmpty()) {
             return 0;
         }
-        int initialValue = 0;
         String s = convertMultiCharNumeral(roman.toUpperCase());
         return Arrays.stream(s.split(""))
                 .filter(this::filterNonRomanNumerals)

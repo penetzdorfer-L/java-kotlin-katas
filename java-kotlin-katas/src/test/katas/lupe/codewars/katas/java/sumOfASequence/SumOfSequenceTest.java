@@ -16,7 +16,8 @@ class SumOfSequenceTest {
             "5,4,1,0",
             "6,6,1,6",
             "1,5,3,5",
-            "0,0,0,0"
+            "0,0,0,0",
+            ""
     })
     void testSumOfSequence(int start, int end, int step, int expected) {
             assertEquals(sumOfSequence.sequenceSum(start, end, step), expected);
