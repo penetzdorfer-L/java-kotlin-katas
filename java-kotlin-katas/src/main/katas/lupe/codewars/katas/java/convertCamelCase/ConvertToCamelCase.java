@@ -15,13 +15,18 @@ public class ConvertToCamelCase {
         return collect.charAt(0) == first ? collect : collect.substring(0,1).toLowerCase() + collect.substring(1);
     }
 
-
     // BEST PRACTICE from Codewars //
-
     public String convertV2(String s) {
         String[] words = s.split("[^A-Za-z0-9]");
         return Arrays.stream(words, 1, words.length)
                 .map(el -> el.substring(0, 1).toUpperCase() + el.substring(1))
+                .reduce(words[0], String::concat);
+    }
+    public String convertV3(String s) {
+        String[] words = s.split("[^A-Za-z0-9]");
+        return Arrays.stream(words)
+                .skip(1)
+                .map(el -> el.substring(0,1).toUpperCase() + el.substring(1))
                 .reduce(words[0], String::concat);
     }
 }
