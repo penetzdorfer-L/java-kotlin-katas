@@ -36,5 +36,4 @@ class ProdFibonacciTest {
         long[] result = prodFibonacci.productFib(prod);
         assertArrayEquals(result, expected);
     }
-
 }
